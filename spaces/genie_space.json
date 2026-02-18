@@ -1,0 +1,72 @@
+{
+  "space_id": "01f107d4952d17669242a64d98ef35dd",
+  "title": "01 - genie - sample - customer reviews",
+  "description": "This is text description of the space",
+  "warehouse_id": "2b8d2aaac020286b",
+  "serialized_space": {
+    "version": 2,
+    "data_sources": {
+      "tables": [
+        {
+          "identifier": "samples.bakehouse.media_customer_reviews",
+          "column_configs": [
+            {
+              "column_name": "franchiseID",
+              "enable_format_assistance": true
+            },
+            {
+              "column_name": "new_id",
+              "enable_format_assistance": true
+            },
+            {
+              "column_name": "review",
+              "enable_format_assistance": true,
+              "enable_entity_matching": true
+            },
+            {
+              "column_name": "review_date",
+              "enable_format_assistance": true
+            }
+          ]
+        },
+        {
+          "identifier": "workspace.default.genie_conversations_history",
+          "column_configs": [
+            {
+              "column_name": "chatbot_response",
+              "enable_format_assistance": true,
+              "enable_entity_matching": true
+            },
+            {
+              "column_name": "conversation_id",
+              "enable_format_assistance": true
+            },
+            {
+              "column_name": "event_timestamp",
+              "enable_format_assistance": true
+            },
+            {
+              "column_name": "user_id",
+              "enable_format_assistance": true
+            },
+            {
+              "column_name": "user_question",
+              "enable_format_assistance": true,
+              "enable_entity_matching": true
+            }
+          ]
+        }
+      ]
+    },
+    "instructions": {
+      "text_instructions": [
+        {
+          "id": "01f107dd975413cc89b665292acd541c",
+          "content": [
+            "If any question is available in genie_chat_history, you can fetch directly from there instead of going through the code."
+          ]
+        }
+      ]
+    }
+  }
+}
